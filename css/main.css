@@ -1,0 +1,4 @@
+/* Example tiny custom rule */
+.tab-active {
+  @apply border-b-2 border-green-600 text-green-700;
+}
