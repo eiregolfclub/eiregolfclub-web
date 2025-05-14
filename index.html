@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>Éire Golf Club</title>
+
+    <!-- Tailwind (CDN build) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <!-- Font Awesome (icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-PlE8…"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Mapbox GL -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#046A38" />
+
+    <!-- Custom CSS (small tweaks only) -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Mount points -->
+    <header id="nav"></header>
+    <main id="app" class="container mx-auto p-4"></main>
+
+    <!-- Modals -->
+    <div id="modal-root"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
