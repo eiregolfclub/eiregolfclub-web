@@ -1,49 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1"
-    />
-    <title>Éire Golf Club</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Éire Golf Club – Ireland’s Golf Community</title>
+  <meta name="description" content="Join Éire Golf Club, Ireland’s premier golf community. Find playing partners, track your handicap, join events, and connect with golfers across the country.">
+  <meta name="keywords" content="Golf, Ireland, Handicap, Events, Community, Golfers, Éire Golf Club">
+  <meta name="author" content="Éire Golf Club">
+  <meta property="og:title" content="Éire Golf Club – Ireland’s Golf Community">
+  <meta property="og:description" content="Find playing partners, track your handicap, join events, and connect with golfers across Ireland.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.ie">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Éire Golf Club – Ireland’s Golf Community">
+  <meta name="twitter:description" content="Join Éire Golf Club, Ireland’s premier golf community.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Preload hero video for performance -->
+  <link rel="preload" as="video" href="assets/hero.mp4" type="video/mp4">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header role="banner" class="site-header">
+    <nav aria-label="Main navigation" class="nav">
+      <a href="/" class="logo" aria-label="Éire Golf Club Home">
+        <img src="assets/logo.svg" alt="Éire Golf Club Logo" width="48" height="48" loading="lazy">
+      </a>
+      <ul class="nav-list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#map">Find Golfers</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#forums">Forums</a></li>
+        <li><a href="#merch">Merch</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="/login" class="btn btn-outline">Login</a>
+        <a href="/signup" class="btn btn-primary">Join Now</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Tailwind (CDN build) -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <main id="main-content" tabindex="-1">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Welcome to Éire Golf Club">
+      <video class="hero-bg" src="assets/hero.mp4" autoplay loop muted playsinline poster="assets/hero-poster.jpg"></video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to Éire Golf Club</h1>
+        <p>Ireland’s Golf Community – Find partners, track your handicap, join events, and more.</p>
+        <a href="/signup" class="btn btn-primary">Join Free</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+      </div>
+    </section>
 
-    <!-- Font Awesome (icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-PlE8…"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- County Selector -->
+    <section class="county-selector" aria-label="Find Golfers by County">
+      <h2>Find Golfers by County</h2>
+      <div class="county-grid" role="list">
+        <!-- Example counties, add more as needed -->
+        <button class="county-btn" role="listitem" aria-label="Dublin">Dublin</button>
+        <button class="county-btn" role="listitem" aria-label="Cork">Cork</button>
+        <button class="county-btn" role="listitem" aria-label="Galway">Galway</button>
+        <button class="county-btn" role="listitem" aria-label="Limerick">Limerick</button>
+        <!-- ... -->
+      </div>
+    </section>
 
-    <!-- Mapbox GL -->
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <!-- Features Section -->
+    <section id="features" class="features" aria-label="Platform Features">
+      <h2>What You Can Do</h2>
+      <ul class="features-list">
+        <li>
+          <h3>Find Playing Partners</h3>
+          <p>Connect with golfers near you and arrange games easily.</p>
+        </li>
+        <li>
+          <h3>Track Your Handicap</h3>
+          <p>Log your rounds and monitor your progress with our digital tracker.</p>
+        </li>
+        <li>
+          <h3>Join Events</h3>
+          <p>Discover and register for golf events across Ireland.</p>
+        </li>
+        <li>
+          <h3>Community Forums</h3>
+          <p>Discuss tips, courses, and more with fellow members.</p>
+        </li>
+        <li>
+          <h3>Coaching Directory</h3>
+          <p>Find and book lessons with certified golf coaches.</p>
+        </li>
+        <li>
+          <h3>Merchandise Store</h3>
+          <p>Shop exclusive Éire Golf Club apparel and gear.</p>
+        </li>
+      </ul>
+    </section>
 
-    <!-- PWA -->
-    <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#046A38" />
+    <!-- Social Content Feed -->
+    <section class="social-feed" aria-label="Latest from Social Media">
+      <h2>Latest from the Golf World</h2>
+      <div class="social-embeds">
+        <!-- Replace with actual embed codes or dynamic content -->
+        <iframe title="Twitter Feed" src="https://twitter.com/yourprofile" loading="lazy"></iframe>
+        <iframe title="TikTok Feed" src="https://www.tiktok.com/@yourprofile" loading="lazy"></iframe>
+        <iframe title="Facebook Feed" src="https://www.facebook.com/yourprofile" loading="lazy"></iframe>
+      </div>
+    </section>
 
-    <!-- Custom CSS (small tweaks only) -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+    <!-- Golfer Match Map -->
+    <section id="map" class="golfer-map" aria-label="Find Golfers Near You">
+      <h2>Find Golfers Near You</h2>
+      <form class="map-filter" aria-label="Filter golfers">
+        <label for="county">County:</label>
+        <select id="county" name="county">
+          <option value="">All Counties</option>
+          <option value="dublin">Dublin</option>
+          <option value="cork">Cork</option>
+          <!-- ... -->
+        </select>
+        <label for="level">Skill Level:</label>
+        <select id="level" name="level">
+          <option value="">All Levels</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <div class="map-container" aria-label="Map of golfers">
+        <!-- Integrate with a map API (e.g., Google Maps, Mapbox) -->
+        <img src="assets/map-placeholder.jpg" alt="Map showing golfers" loading="lazy">
+      </div>
+    </section>
 
-  <body class="bg-gray-50 text-gray-800">
-    <!-- Mount points -->
-    <header id="nav"></header>
-    <main id="app" class="container mx-auto p-4"></main>
+    <!-- Upcoming Events -->
+    <section id="events" class="events" aria-label="Upcoming Golf Events">
+      <h2>Upcoming Events</h2>
+      <div class="events-grid">
+        <!-- Example event cards -->
+        <article class="event-card">
+          <h3>Spring Open</h3>
+          <p>Date: 2025-06-01</p>
+          <p>Location: Portmarnock Golf Club</p>
+          <a href="/events/1" class="btn btn-secondary">Details</a>
+        </article>
+        <article class="event-card">
+          <h3>Munster Classic</h3>
+          <p>Date: 2025-07-15</p>
+          <p>Location: Fota Island Resort</p>
+          <a href="/events/2" class="btn btn-secondary">Details</a>
+        </article>
+        <!-- ... -->
+      </div>
+      <a href="/events" class="btn btn-outline">View All Events</a>
+    </section>
 
-    <!-- Modals -->
-    <div id="modal-root"></div>
+    <!-- Handicap Tracker Preview -->
+    <section class="handicap-tracker" aria-label="Handicap Tracker Preview">
+      <h2>Track Your Handicap</h2>
+      <p>Log your rounds and see your progress over time.</p>
+      <img src="assets/handicap-preview.png" alt="Handicap tracker preview" loading="lazy">
+    </section>
 
-    <!-- Scripts -->
-    <script type="module" src="js/main.js"></script>
-  </body>
+    <!-- County Forums Preview -->
+    <section id="forums" class="forums-preview" aria-label="County Forums Preview">
+      <h2>County Forums</h2>
+      <div class="forums-grid">
+        <article class="forum-post">
+          <h3>Best Courses in Dublin?</h3>
+          <p>Share your recommendations for top courses in Dublin.</p>
+          <a href="/forums/dublin" class="btn btn-secondary">Join Discussion</a>
+        </article>
+        <article class="forum-post">
+          <h3>Beginner Tips</h3>
+          <p>Advice for those new to golf in Ireland.</p>
+          <a href="/forums/beginners" class="btn btn-secondary">Join Discussion</a>
+        </article>
+        <!-- ... -->
+      </div>
+      <a href="/forums" class="btn btn-outline">View All Forums</a>
+    </section>
+
+    <!-- Merchandise -->
+    <section id="merch" class="merchandise" aria-label="Merchandise Store">
+      <h2>Shop Éire Golf Club Merch</h2>
+      <div class="merch-grid">
+        <div class="merch-item">
+          <img src="assets/merch-shirt.jpg" alt="Éire Golf Club T-shirt" loading="lazy">
+          <p>T-shirt – €25</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+        <div class="merch-item">
+          <img src="assets/merch-cap.jpg" alt="Éire Golf Club Cap" loading="lazy">
+          <p>Cap – €15</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+        <!-- ... -->
+      </div>
+      <a href="/shop" class="btn btn-outline">View All Merch</a>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing" aria-label="Membership Pricing">
+      <h2>Membership Options</h2>
+      <div class="pricing-tiers">
+        <div class="pricing-card">
+          <h3>Free</h3>
+          <p>Access forums, events, and the golfer map.</p>
+          <p class="price">€0/month</p>
+          <a href="/signup" class="btn btn-primary">Join Free</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Premium</h3>
+          <p>Unlock advanced features, exclusive events, and more.</p>
+          <p class="price">€5/month</p>
+          <a href="/signup" class="btn btn-secondary">Go Premium</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; 2025 Éire Golf Club. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </footer>
+
+  <!-- Accessibility: Focus styles and skip link CSS -->
+  <style>
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      z-index: 100;
+      background: #fff;
+      color: #007b5e;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: left 0.3s;
+    }
+    .skip-link:focus {
+      left: 16px;
+      top: 16px;
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+      outline: 2px solid #007b5e;
+    }
+    /* Add your main styles in styles.css */
+  </style>
+</body>
 </html>
