@@ -19,28 +19,27 @@
   <link rel="icon" href="assets/favicon.ico">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Preload hero video for performance -->
+  <link rel="stylesheet" href="css/main.css">
   <link rel="preload" as="video" href="assets/hero.mp4" type="video/mp4">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header role="banner" class="site-header">
-    <nav aria-label="Main navigation" class="nav">
-      <a href="/" class="logo" aria-label="Éire Golf Club Home">
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="/" class="navbar-logo" aria-label="Éire Golf Club Home">
         <img src="assets/logo.svg" alt="Éire Golf Club Logo" width="48" height="48" loading="lazy">
       </a>
-      <ul class="nav-list">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#map">Find Golfers</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#forums">Forums</a></li>
-        <li><a href="#merch">Merch</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+      <ul class="navbar-menu">
+        <li><a href="#features" class="navbar-link">Features</a></li>
+        <li><a href="#map" class="navbar-link">Find Golfers</a></li>
+        <li><a href="#events" class="navbar-link">Events</a></li>
+        <li><a href="#forums" class="navbar-link">Forums</a></li>
+        <li><a href="#merch" class="navbar-link">Merch</a></li>
+        <li><a href="#pricing" class="navbar-link">Pricing</a></li>
       </ul>
-      <div class="nav-actions">
-        <a href="/login" class="btn btn-outline">Login</a>
-        <a href="/signup" class="btn btn-primary">Join Now</a>
+      <div class="navbar-actions">
+        <a href="/login" class="button button-outline">Login</a>
+        <a href="/signup" class="button button-primary">Join Now</a>
       </div>
     </nav>
   </header>
@@ -48,65 +47,63 @@
   <main id="main-content" tabindex="-1">
     <!-- Hero Section -->
     <section class="hero" aria-label="Welcome to Éire Golf Club">
-      <video class="hero-bg" src="assets/hero.mp4" autoplay loop muted playsinline poster="assets/hero-poster.jpg"></video>
+      <video class="hero-video" src="assets/hero.mp4" autoplay loop muted playsinline poster="assets/hero-poster.jpg"></video>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1>Welcome to Éire Golf Club</h1>
-        <p>Ireland’s Golf Community – Find partners, track your handicap, join events, and more.</p>
-        <a href="/signup" class="btn btn-primary">Join Free</a>
-        <a href="#features" class="btn btn-secondary">Learn More</a>
+        <h1 class="hero-title">Welcome to Éire Golf Club</h1>
+        <p class="hero-subtitle">Ireland’s Golf Community – Find partners, track your handicap, join events, and more.</p>
+        <a href="/signup" class="button button-primary">Join Free</a>
+        <a href="#features" class="button button-secondary">Learn More</a>
       </div>
     </section>
 
     <!-- County Selector -->
-    <section class="county-selector" aria-label="Find Golfers by County">
-      <h2>Find Golfers by County</h2>
+    <section class="section county-section" aria-label="Find Golfers by County">
+      <h2 class="section-title">Find Golfers by County</h2>
       <div class="county-grid" role="list">
-        <!-- Example counties, add more as needed -->
-        <button class="county-btn" role="listitem" aria-label="Dublin">Dublin</button>
-        <button class="county-btn" role="listitem" aria-label="Cork">Cork</button>
-        <button class="county-btn" role="listitem" aria-label="Galway">Galway</button>
-        <button class="county-btn" role="listitem" aria-label="Limerick">Limerick</button>
-        <!-- ... -->
+        <button class="county-button" role="listitem" aria-label="Dublin">Dublin</button>
+        <button class="county-button" role="listitem" aria-label="Cork">Cork</button>
+        <button class="county-button" role="listitem" aria-label="Galway">Galway</button>
+        <button class="county-button" role="listitem" aria-label="Limerick">Limerick</button>
+        <!-- Add more counties as needed -->
       </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features" aria-label="Platform Features">
-      <h2>What You Can Do</h2>
+    <section id="features" class="section features-section" aria-label="Platform Features">
+      <h2 class="section-title">What You Can Do</h2>
       <ul class="features-list">
-        <li>
-          <h3>Find Playing Partners</h3>
+        <li class="feature-card">
+          <h3 class="feature-title">Find Playing Partners</h3>
           <p>Connect with golfers near you and arrange games easily.</p>
         </li>
-        <li>
-          <h3>Track Your Handicap</h3>
+        <li class="feature-card">
+          <h3 class="feature-title">Track Your Handicap</h3>
           <p>Log your rounds and monitor your progress with our digital tracker.</p>
         </li>
-        <li>
-          <h3>Join Events</h3>
+        <li class="feature-card">
+          <h3 class="feature-title">Join Events</h3>
           <p>Discover and register for golf events across Ireland.</p>
         </li>
-        <li>
-          <h3>Community Forums</h3>
+        <li class="feature-card">
+          <h3 class="feature-title">Community Forums</h3>
           <p>Discuss tips, courses, and more with fellow members.</p>
         </li>
-        <li>
-          <h3>Coaching Directory</h3>
+        <li class="feature-card">
+          <h3 class="feature-title">Coaching Directory</h3>
           <p>Find and book lessons with certified golf coaches.</p>
         </li>
-        <li>
-          <h3>Merchandise Store</h3>
+        <li class="feature-card">
+          <h3 class="feature-title">Merchandise Store</h3>
           <p>Shop exclusive Éire Golf Club apparel and gear.</p>
         </li>
       </ul>
     </section>
 
     <!-- Social Content Feed -->
-    <section class="social-feed" aria-label="Latest from Social Media">
-      <h2>Latest from the Golf World</h2>
+    <section class="section social-section" aria-label="Latest from Social Media">
+      <h2 class="section-title">Latest from the Golf World</h2>
       <div class="social-embeds">
-        <!-- Replace with actual embed codes or dynamic content -->
         <iframe title="Twitter Feed" src="https://twitter.com/yourprofile" loading="lazy"></iframe>
         <iframe title="TikTok Feed" src="https://www.tiktok.com/@yourprofile" loading="lazy"></iframe>
         <iframe title="Facebook Feed" src="https://www.facebook.com/yourprofile" loading="lazy"></iframe>
@@ -114,152 +111,123 @@
     </section>
 
     <!-- Golfer Match Map -->
-    <section id="map" class="golfer-map" aria-label="Find Golfers Near You">
-      <h2>Find Golfers Near You</h2>
+    <section id="map" class="section map-section" aria-label="Find Golfers Near You">
+      <h2 class="section-title">Find Golfers Near You</h2>
       <form class="map-filter" aria-label="Filter golfers">
         <label for="county">County:</label>
-        <select id="county" name="county">
+        <select id="county" name="county" class="input">
           <option value="">All Counties</option>
           <option value="dublin">Dublin</option>
           <option value="cork">Cork</option>
           <!-- ... -->
         </select>
         <label for="level">Skill Level:</label>
-        <select id="level" name="level">
+        <select id="level" name="level" class="input">
           <option value="">All Levels</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
         </select>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="button button-primary">Search</button>
       </form>
       <div class="map-container" aria-label="Map of golfers">
-        <!-- Integrate with a map API (e.g., Google Maps, Mapbox) -->
         <img src="assets/map-placeholder.jpg" alt="Map showing golfers" loading="lazy">
       </div>
     </section>
 
     <!-- Upcoming Events -->
-    <section id="events" class="events" aria-label="Upcoming Golf Events">
-      <h2>Upcoming Events</h2>
+    <section id="events" class="section events-section" aria-label="Upcoming Golf Events">
+      <h2 class="section-title">Upcoming Events</h2>
       <div class="events-grid">
-        <!-- Example event cards -->
         <article class="event-card">
-          <h3>Spring Open</h3>
+          <h3 class="event-title">Spring Open</h3>
           <p>Date: 2025-06-01</p>
           <p>Location: Portmarnock Golf Club</p>
-          <a href="/events/1" class="btn btn-secondary">Details</a>
+          <a href="/events/1" class="button button-secondary">Details</a>
         </article>
         <article class="event-card">
-          <h3>Munster Classic</h3>
+          <h3 class="event-title">Munster Classic</h3>
           <p>Date: 2025-07-15</p>
           <p>Location: Fota Island Resort</p>
-          <a href="/events/2" class="btn btn-secondary">Details</a>
+          <a href="/events/2" class="button button-secondary">Details</a>
         </article>
-        <!-- ... -->
+        <!-- Add more events as needed -->
       </div>
-      <a href="/events" class="btn btn-outline">View All Events</a>
+      <a href="/events" class="button button-outline">View All Events</a>
     </section>
 
     <!-- Handicap Tracker Preview -->
-    <section class="handicap-tracker" aria-label="Handicap Tracker Preview">
-      <h2>Track Your Handicap</h2>
+    <section class="section handicap-section" aria-label="Handicap Tracker Preview">
+      <h2 class="section-title">Track Your Handicap</h2>
       <p>Log your rounds and see your progress over time.</p>
-      <img src="assets/handicap-preview.png" alt="Handicap tracker preview" loading="lazy">
+      <img src="assets/handicap-preview.png" alt="Handicap tracker preview" loading="lazy" class="handicap-image">
     </section>
 
     <!-- County Forums Preview -->
-    <section id="forums" class="forums-preview" aria-label="County Forums Preview">
-      <h2>County Forums</h2>
+    <section id="forums" class="section forums-section" aria-label="County Forums Preview">
+      <h2 class="section-title">County Forums</h2>
       <div class="forums-grid">
-        <article class="forum-post">
-          <h3>Best Courses in Dublin?</h3>
+        <article class="forum-card">
+          <h3 class="forum-title">Best Courses in Dublin?</h3>
           <p>Share your recommendations for top courses in Dublin.</p>
-          <a href="/forums/dublin" class="btn btn-secondary">Join Discussion</a>
+          <a href="/forums/dublin" class="button button-secondary">Join Discussion</a>
         </article>
-        <article class="forum-post">
-          <h3>Beginner Tips</h3>
+        <article class="forum-card">
+          <h3 class="forum-title">Beginner Tips</h3>
           <p>Advice for those new to golf in Ireland.</p>
-          <a href="/forums/beginners" class="btn btn-secondary">Join Discussion</a>
+          <a href="/forums/beginners" class="button button-secondary">Join Discussion</a>
         </article>
-        <!-- ... -->
+        <!-- Add more forum posts as needed -->
       </div>
-      <a href="/forums" class="btn btn-outline">View All Forums</a>
+      <a href="/forums" class="button button-outline">View All Forums</a>
     </section>
 
     <!-- Merchandise -->
-    <section id="merch" class="merchandise" aria-label="Merchandise Store">
-      <h2>Shop Éire Golf Club Merch</h2>
+    <section id="merch" class="section merch-section" aria-label="Merchandise Store">
+      <h2 class="section-title">Shop Éire Golf Club Merch</h2>
       <div class="merch-grid">
-        <div class="merch-item">
-          <img src="assets/merch-shirt.jpg" alt="Éire Golf Club T-shirt" loading="lazy">
-          <p>T-shirt – €25</p>
-          <button class="btn btn-primary">Add to Cart</button>
+        <div class="merch-card">
+          <img src="assets/merch-shirt.jpg" alt="Éire Golf Club T-shirt" loading="lazy" class="merch-image">
+          <p class="merch-title">T-shirt – €25</p>
+          <button class="button button-primary">Add to Cart</button>
         </div>
-        <div class="merch-item">
-          <img src="assets/merch-cap.jpg" alt="Éire Golf Club Cap" loading="lazy">
-          <p>Cap – €15</p>
-          <button class="btn btn-primary">Add to Cart</button>
+        <div class="merch-card">
+          <img src="assets/merch-cap.jpg" alt="Éire Golf Club Cap" loading="lazy" class="merch-image">
+          <p class="merch-title">Cap – €15</p>
+          <button class="button button-primary">Add to Cart</button>
         </div>
-        <!-- ... -->
+        <!-- Add more merch as needed -->
       </div>
-      <a href="/shop" class="btn btn-outline">View All Merch</a>
+      <a href="/shop" class="button button-outline">View All Merch</a>
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="pricing" aria-label="Membership Pricing">
-      <h2>Membership Options</h2>
-      <div class="pricing-tiers">
+    <section id="pricing" class="section pricing-section" aria-label="Membership Pricing">
+      <h2 class="section-title">Membership Options</h2>
+      <div class="pricing-grid">
         <div class="pricing-card">
-          <h3>Free</h3>
+          <h3 class="pricing-title">Free</h3>
           <p>Access forums, events, and the golfer map.</p>
-          <p class="price">€0/month</p>
-          <a href="/signup" class="btn btn-primary">Join Free</a>
+          <p class="pricing-price">€0/month</p>
+          <a href="/signup" class="button button-primary">Join Free</a>
         </div>
         <div class="pricing-card">
-          <h3>Premium</h3>
+          <h3 class="pricing-title">Premium</h3>
           <p>Unlock advanced features, exclusive events, and more.</p>
-          <p class="price">€5/month</p>
-          <a href="/signup" class="btn btn-secondary">Go Premium</a>
+          <p class="pricing-price">€5/month</p>
+          <a href="/signup" class="button button-secondary">Go Premium</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer class="footer" role="contentinfo">
     <p>&copy; 2025 Éire Golf Club. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms">Terms of Service</a>
-      <a href="/contact">Contact</a>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/privacy" class="footer-link">Privacy Policy</a>
+      <a href="/terms" class="footer-link">Terms of Service</a>
+      <a href="/contact" class="footer-link">Contact</a>
     </nav>
   </footer>
-
-  <!-- Accessibility: Focus styles and skip link CSS -->
-  <style>
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      z-index: 100;
-      background: #fff;
-      color: #007b5e;
-      padding: 8px 16px;
-      border-radius: 4px;
-      transition: left 0.3s;
-    }
-    .skip-link:focus {
-      left: 16px;
-      top: 16px;
-      width: auto;
-      height: auto;
-      font-size: 1rem;
-      outline: 2px solid #007b5e;
-    }
-    /* Add your main styles in styles.css */
-  </style>
 </body>
 </html>
